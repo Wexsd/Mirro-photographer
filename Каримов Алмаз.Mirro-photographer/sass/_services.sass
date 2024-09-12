@@ -1,0 +1,48 @@
+.services
+    position: relative
+    overflow: hidden
+    padding: 10rem 8.3vw
+    @include respond(big-screen)
+        padding: 10rem 12rem
+    &__grad
+        position: absolute
+        width: 80rem
+        height: 66rem
+        background: radial-gradient(50% 50% at 50% 50%, rgba(58, 95, 86, 0.38) 0%, rgba(58, 95, 86, 0.00) 100%)
+        bottom: -33.5rem
+        left: -46rem
+    &__container
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+    &__cards
+        grid-column: 1 / -1
+        grid-row: 2 / 3
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr))
+        grid-template-rows: repeat(auto-fit, 30rem)
+        gap: 1.6rem
+    &__card
+        background-color: $color-gray
+        border-radius: 1.6rem
+        padding: 3rem
+    &__circle
+        width: 4.8rem
+        height: 4.8rem
+        background-color: #3A5F561A
+        border-radius: 2.4rem
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 1rem
+    &__icon
+        width: 2.4rem
+        height: 2.4rem
+    &__card-title
+        margin-bottom: 0.6rem
+    &__card-text
+        margin-bottom: 1.8rem
+    &__read-more
+    &__arrow
+        width: 2rem
+        height: 1rem
+    

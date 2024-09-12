@@ -1,0 +1,41 @@
+.nav
+    padding: 1rem 8vw
+    background-color: $color-white
+    @include respond(big-screen)
+        padding: 1rem 12rem
+    &__container
+        display: grid
+        grid-template-columns: 7fr repeat(6, 1fr)
+        padding: 1rem 1.6rem
+        align-items: center
+        column-gap: 2rem
+    &__link
+        font-size: 1.6rem
+        font-weight: 300
+        text-decoration: none
+        text-align: center
+        color: $color-main
+    &__btn
+        position: relative
+    &__logo
+        width: 113px
+        height: 30px
+    &__basket
+        width: 1.7rem
+        height: 1.7rem
+        position: absolute
+        top: .9rem
+        left: 1.4rem
+    &__circle
+        position: absolute
+        display: flex
+        width: 2rem
+        height: 2rem
+        color: $color-main
+        background-color: $color-white
+        border-radius: 1rem
+        top: .9rem
+        left: 8.5rem
+        justify-content: center
+        align-items: flex-end
+        

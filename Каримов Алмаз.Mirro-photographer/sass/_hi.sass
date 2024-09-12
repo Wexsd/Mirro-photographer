@@ -1,0 +1,42 @@
+.hi
+    position: relative
+    overflow: hidden
+    &__container
+        background-color: $color-gray
+        padding: 10rem 8vw
+        display: grid
+        grid-template-areas: ". img" "title img" "text img" "btn img" ". img"
+        gap: 1.5rem 6.4rem
+        justify-items: start
+        @include respond(big-screen)
+            padding: 10rem 12rem
+    &__title
+        grid-area: title
+    &__text
+        grid-area: text
+    &__btn
+        z-index: 1
+        grid-area: btn
+        &:hover
+            color: $color-black
+    &__img
+        grid-area: img
+        width: 38vw
+        @include respond(big-screen)
+            width: 55.2rem
+    &__grad-1
+        position: absolute
+        width: 56rem
+        height: 50rem
+        background: radial-gradient(50% 50% at 50% 50%, rgba(58, 95, 86, 0.55) 0%, rgba(58, 95, 86, 0.00) 100%)
+        flex-shrink: 0
+        top: -4rem
+        right: -10rem
+    &__grad-2
+        position: absolute
+        width: 72rem
+        height: 81rem
+        flex-shrink: 0
+        background: radial-gradient(50% 50% at 50% 50%, rgba(184, 125, 88, 0.80) 0%, rgba(184, 125, 88, 0.00) 100%)
+        left: -22rem
+        bottom: -44rem
